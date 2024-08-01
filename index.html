@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Nihal - Portfolio</title>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: #33FF33;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #terminal {
+            background-color: #2E3440;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        #terminal-header {
+            background-color: #4C566A;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .terminal-title {
+            color: #D8DEE9;
+            font-size: 14px;
+        }
+
+        .terminal-buttons {
+            display: flex;
+        }
+
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .terminal-button.close { background-color: #BF616A; }
+        .terminal-button.minimize { background-color: #EBCB8B; }
+        .terminal-button.maximize { background-color: #A3BE8C; }
+
+        #terminal-body {
+            padding: 20px;
+            height: 80vh;
+            overflow-y: auto;
+        }
+
+        #ascii-name {
+            font-size: 8px;
+            white-space: pre;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .command-line::before {
+            content: "guest@nihal-portfolio:~$ ";
+            color: #88C0D0;
+        }
+
+        .command-output {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #4ECDC4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skill-tree {
+            font-family: monospace;
+            white-space: pre;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project-details {
+            padding-left: 20px;
+            color: #88C0D0;
+        }
+
+        .typing {
+            border-right: .15em solid #33FF33;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #33FF33; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="terminal">
+            <div id="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button close"></div>
+                    <div class="terminal-button minimize"></div>
+                    <div class="terminal-button maximize"></div>
+                </div>
+                <div class="terminal-title">Mohammed Nihal - Portfolio</div>
+            </div>
+            <div id="terminal-body">
+                <pre id="ascii-name">
+ __  __  ___  _   _   _   __  __ __  __ _____ ____    _   _ ___ _   _    _    _     
+|  \/  |/ _ \| | | | / \  |  \/  |  \/  | ____|  _ \  | \ | |_ _| | | |  / \  | |    
+| |\/| | | | | |_| |/ _ \ | |\/| | |\/| |  _| | | | | |  \| || || |_| | / _ \ | |    
+| |  | | |_| |  _  / ___ \| |  | | |  | | |___| |_| | | |\  || ||  _  |/ ___ \| |___ 
+|_|  |_|\___/|_| |_/_/   \_\_|  |_|_|  |_|_____|____/  |_| \_|___|_| |_/_/   \_\_____|
+                </pre>
+
+                <div class="command-line">about</div>
+                <div class="command-output ">
+                   <ul> 
+                    <li>Mohammed Nihal</li>
+                    <li>Email: mh.nihal2002@gmail.com</li>
+                    <li>Phone: 8660268828</li>
+                    <li>Location: Mangalore, Karnataka</li>
+                </ul>
+                    <a href='#' target='_blank'>GitHub</a> | <a href='#' target='_blank'>LinkedIn</a> | <a href='#' target='_blank'>CodeChef</a>
+                </div>
+
+                <div class="command-line">education</div>
+                <div class="command-output ">
+                    B.E in Computer Science and Engineering
+                    P.A. College of Engineering Mangalore
+                    Dec 2021 - Sept 2025
+                </div>
+
+                <div class="command-line">skills</div>
+                <div class="command-output skill-tree">
+.
+├── Technical Skills
+│   ├── Languages: C, C++, Java, Python, JavaScript
+│   ├── Web: HTML, CSS, Django, Flask, Angular, ExpressJS
+│   ├── Tools: Git, Docker, GCP, AWS, GitHub
+│   ├── Databases: SQL, Postgres, MySQL, SQLite, MongoDB
+│   └── Other: OOP, Bash, NodeJS, Go, Linux, Cybersecurity
+├── Soft Skills
+│   ├── Communication
+│   ├── Teamwork
+│   └── Adaptability
+└── Languages
+    ├── English
+    ├── Malayalam
+    ├── Hindi
+    └── Kannada
+                </div>
+
+                <div class="command-line">experience</div>
+                <div class="command-output ">
+                    <dl><dt>CyberSecurity Intern</dt> 
+                        <dd>@P.A College of Engineering Mangalore</dd>
+                    - Gained hands-on experience with foundational cybersecurity concepts and tools.
+                
+                </dl>
+                </div>
+
+                <div class="command-line">projects</div>
+                <div class="command-output">
+                    <div class="project ">
+                        <h3>ReCode | Python, Flask, Ollama, Llama3</h3>
+                        <div class="project-details">
+                            - Leveraged the Llama3 framework to convert legacy languages to modern languages 
+                              and generate comprehensive documentation.
+                        </div>
+                    </div>
+                    <div class="project ">
+                        <h3>Job Listing API | Python, Django, DRF, React Native</h3>
+                        <div class="project-details">
+                            - Developed a Django-based backend API for job listings with search and 
+                              location-based filtering.
+                        </div>
+                    </div>
+                    <div class="project ">
+                        <h3>Vader-Gloves | Python, Arduino, MPU6050 sensor</h3>
+                        <div class="project-details">
+                            - Designed gaming gloves with enhanced interactivity through hand movements 
+                              and gestures.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="command-line">achievements</div>
+                <div class="command-output ">
+                    <dl>- Finalist in EG Innovation Challenge for developing ReCode API using Llama3 LLM model.</dl>
+                    <dl>- Won first place in P.A.C.E. NIRMAN mini project competition for the Job Listing API project.</dl>
+                </div>
+
+                <div class="command-line">certifications</div>
+                <div class="command-output ">
+                    <ul>
+                    <li>Postman API Fundamentals Student Expert - POSTMAN</li>
+                    <li>Python Django - Infosys Springboard</li>
+                    <li>Python 101 for Data Science - IBM</li>
+                    <li>The Basics of Google Cloud Compute - Cloud Skill Boost by Google</li>
+                    <li>C Programming - Great Learning</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
