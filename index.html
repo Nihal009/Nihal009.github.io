@@ -66,6 +66,7 @@
             white-space: pre;
             line-height: 1;
             margin-bottom: 20px;
+            overflow-x: auto;
         }
 
         .command-line::before {
@@ -89,6 +90,7 @@
         .skill-tree {
             font-family: monospace;
             white-space: pre;
+            overflow-x: auto;
         }
 
         .project {
@@ -100,22 +102,22 @@
             color: #88C0D0;
         }
 
-        .typing {
-            border-right: .15em solid #33FF33;
-            white-space: nowrap;
-            overflow: hidden;
-            margin: 0 auto;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
 
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
+            #terminal-body {
+                padding: 10px;
+            }
 
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #33FF33; }
+            #ascii-name {
+                font-size: 6px;
+            }
+
+            .terminal-title {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -140,7 +142,7 @@
                 </pre>
 
                 <div class="command-line">about</div>
-                <div class="command-output ">
+                <div class="command-output">
                    <ul> 
                     <li>Mohammed Nihal</li>
                     <li>Email: mh.nihal2002@gmail.com</li>
@@ -151,7 +153,7 @@
                 </div>
 
                 <div class="command-line">education</div>
-                <div class="command-output ">
+                <div class="command-output">
                     B.E in Computer Science and Engineering
                     P.A. College of Engineering Mangalore
                     Dec 2021 - Sept 2025
@@ -178,7 +180,7 @@
                 </div>
 
                 <div class="command-line">experience</div>
-                <div class="command-output ">
+                <div class="command-output">
                     <dl><dt>CyberSecurity Intern</dt> 
                         <dd>@P.A College of Engineering Mangalore</dd>
                     - Gained hands-on experience with foundational cybersecurity concepts and tools.
@@ -188,21 +190,21 @@
 
                 <div class="command-line">projects</div>
                 <div class="command-output">
-                    <div class="project ">
+                    <div class="project">
                         <h3>ReCode | Python, Flask, Ollama, Llama3</h3>
                         <div class="project-details">
                             - Leveraged the Llama3 framework to convert legacy languages to modern languages 
                               and generate comprehensive documentation.
                         </div>
                     </div>
-                    <div class="project ">
+                    <div class="project">
                         <h3>Job Listing API | Python, Django, DRF, React Native</h3>
                         <div class="project-details">
                             - Developed a Django-based backend API for job listings with search and 
                               location-based filtering.
                         </div>
                     </div>
-                    <div class="project ">
+                    <div class="project">
                         <h3>Vader-Gloves | Python, Arduino, MPU6050 sensor</h3>
                         <div class="project-details">
                             - Designed gaming gloves with enhanced interactivity through hand movements 
@@ -212,13 +214,13 @@
                 </div>
 
                 <div class="command-line">achievements</div>
-                <div class="command-output ">
+                <div class="command-output">
                     <dl>- Finalist in EG Innovation Challenge for developing ReCode API using Llama3 LLM model.</dl>
                     <dl>- Won first place in P.A.C.E. NIRMAN mini project competition for the Job Listing API project.</dl>
                 </div>
 
                 <div class="command-line">certifications</div>
-                <div class="command-output ">
+                <div class="command-output">
                     <ul>
                     <li>Postman API Fundamentals Student Expert - POSTMAN</li>
                     <li>Python Django - Infosys Springboard</li>
